@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Primer pagina en HTML</title>
+    </head>
+    <body>
+        <h1>Primer pagina en HTML</h1>
+
+<!-- Insertar imagen -->
+<img src="img/ULEAM.png"
+alt="Logo de la ULEAM"
+width="300"
+height="300">
+
+	<h2>El comienzo</h2>
+	  <p>El padre de la web, <strong>Tim Berners-Lee</strong>, 
+        es tambien el padre del lenguaje HTML, 
+        <em>Hypertext Markup Language.</em> </p>
+        
+    <h2>La estandarzación</h2>
+        <p>El lnguaje esta estandarizado por el w3c, 
+        <em>el world wide web Consortium</em></p>
+
+        <p>La version actual es la  HTML 5 y es la
+         que estoy utilizando 
+         en este <strong>año 2020</strong></p>
+
+<br> <br/> 
+
+<!-- Lista Desordenada -->
+    <h2> Mis aficiones:</h2>
+<ul>
+    <li> El cine.
+    <li> La montaña.
+    <li> La música.
+</ul>
+
+<br> <br/> 
+
+<!-- Lista Ordenada -->
+    <h2> Mis preferencias:</h2>
+<ol>
+    <li> Viajar.
+    <li> Salir con mis amigos.
+    <li> Dormir.
+</ol>
+
+<br> <br/> 
+
+<!-- Lista de definiciones -->
+<dl>
+<dt>HTML</dt>
+    <dd>HyperText Markup Language</dd>
+<dt>HTTP</dt>
+    <dd>HyperText Transfer Protocol</dd>
+<dt>URL</dt>
+    <dd>Uniform Resource Locator</dd>     
+</dl>
+
+<br> <br/> 
+
+<!-- Lista Anidada -->
+<ol> 
+    <li> Números cardinales:
+        <ul>
+        <li>Uno
+        <li>Dos
+        <li>Tres
+        </ul>
+    <li> Números ordinales:
+        <ul>
+        <li>Primero
+        <li>Segundo
+        <li>Tercero
+        </ul>
+    </ol> 
+
+ <br> <br/>  
+
+<!--  Formulario con atributo multiple -->
+    <select multiple="multiple">
+        <option value="HTML">
+            HTML
+        </option>
+        <option value="CSS">
+            CSS
+        </option>
+    </select>
+
+ <br> <br/> 
+
+<!-- Agupaciones en formulario con etiqueta optgroup -->
+    <select> 
+        <optgroup label="HTML">
+            <option value="tables">Tablas</option>
+            <option value="forms">Formularios</option>
+        </optgroup>
+        <optgroup label="CSS"></optgroup>
+            <option value="style">Colores</option>
+    </select>
+
+<br> <br/> 
+
+<!--  Agrupaciones en formulario con etiqueta fieldset-->
+    <fieldset><legend>Perfil</legend>
+        Nombre:<input type="text"><br/>
+        Email:<input type="text"><br/>
+    </fieldset>
+    <fieldset><legend>Temas</legend>
+        <input type="checkbox">HTML
+        <input type="checkbox">CSS
+    </fieldset>
+
+<br> <br/> 
+
+<!--  Tabla de 3 bloques de estilo -->
+    <table>
+        <caption>Notas del parcial</caption>
+        <thead>
+          <tr>
+            <th>Alunmo</th>
+            <th>Nota</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Pepe</td>
+            <td>7,65</td>
+          </tr>
+          <tr>
+            <td>María</td>
+            <td>8,54</td>
+          </tr>
+          <tr>
+            <td>Jordi</td>
+            <td>5,55</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+              <td>Media</td>
+              <td>7,25</td>
+            </tr>
+            <tr>
+                <td>Desv. Típica</td>
+                <td>7,35</td>
+              </tr>
+          </tfoot>
+      </table>
+
+<br> <br/> 
+
+<!-- Tabla con atributos colspan y rowpan -->
+<table>
+    <caption>Ingresos</caption>
+    <thead>
+        <tr><td colspan="2">2012</td></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="2">Enero</td>
+        <td>100$</td>
+      </tr>
+      <tr>
+        <td>50$</td>
+      </tr>
+    </tbody>
+    <tfoot>
+     <tr>
+        <td>Febrero</td>
+        <td>75$</td>
+    </tr>
+    </tfoot>
+  </table>
+
+<br> <br/> 
+
+<!-- Insertar figuras geometricas -->
+
+<p>Por favor, seleccione una figura:</p>
+    <img src="img/paginaweb.png" usemap="#mapalogos" alt="Componentes de una página Web">
+<map name="mapalogos">
+<area shape="rect" coords="405,73,520,166" href="#" alt="HTML5">
+<area shape="circle" coords="200,75,50" href="#" alt="JavaScripts">
+<area shape="rect" coords="748,248,750,250" href="#" alt="Extenciones"> 
+<area shape="poly" coords="571,119,626,59,687,118,628,177" href="#" alt="Git">
+</map>
+
+<br> <br/> 
+
+<!-- Tipos de inputs -->
+<h3>Tipos de inputs:</h3>
+<p> Buscar: <input type="search" name="Buscar" autofocus></p>
+<p> URL: <input type="url" name="URL"></p>
+<p> Telefono: <input type="tel" name="Telefono" pattern="(+[0-9]{2}) [0-9]{9}"> </p>
+<p> Email: <input type="email" name="Email"></p>
+<p> Edad: <input type="number" name="Edad" min="1" max="120"></p>
+<p> Color Favorito: <input type="color" name="Color Favorito" value="#123456"></p>
+<p> Escoja un número del 1 al 10: <input type="range" name="Numero" min="1" max="10"></p>
+<p> Fecha y Hora: <input type="datetime-local" name="Fecha salida"></p>
+<p> Fecha de Nacimiento: <input type="date" name="Fecha de Nacimiento"></p>
+
+<br> <br/> 
+
+
+<!-- Insertar enlace -->
+    <a href="https://www.uleam.edu.ec/">ULEAM</a>
+
+</html>  
