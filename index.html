@@ -1,17 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>Primer pagina en HTML</title>
-    </head>
+
+    <meta charset="utf-8" />
+     <!-- Diseño adaptable -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+         <!-- Barra de herramientas -->
+   <h1>
+    <a href="https://www.uleam.edu.ec/">ULEAM</a>
+</h1>
+
+<form action="">
+    <label for="buscar">Buscar</label>
+    <input type="text" id "buscar">
+    <button>+</button>
+</form>
+<br> <br/> 
+
+
+        <title>Primer página en HTML</title>
+
+    <!-- etiqueta link -->
+   <link href="estilos.css" rel="stylesheet" type="text/css"/> 
+    
+    </head> <!-- atributo style -->
     <body>
-        <h1>Primer pagina en HTML</h1>
 
-<!-- Insertar imagen -->
-<img src="img/ULEAM.png"
-alt="Logo de la ULEAM"
-width="300"
-height="300">
+    <h1 style="font:Georgia; font-size: 3em;">Primer página en HTML</h1>
 
+    <br> <br/> 
+
+      <!-- Insertar imagen -->
+      <img src="img/ULEAM.png"
+      alt="Logo de la ULEAM"
+      width="300"
+      height="300">     
+
+      <br> <br/> 
+        
 	<h2>El comienzo</h2>
 	  <p>El padre de la web, <strong>Tim Berners-Lee</strong>, 
         es tambien el padre del lenguaje HTML, 
@@ -28,7 +55,7 @@ height="300">
 <br> <br/> 
 
 <!-- Lista Desordenada -->
-    <h2> Mis aficiones:</h2>
+    <h2 style="font-family:Georgia; font-size: 2em;"> Mis aficiones:</h2>
 <ul>
     <li> El cine.
     <li> La montaña.
@@ -38,7 +65,7 @@ height="300">
 <br> <br/> 
 
 <!-- Lista Ordenada -->
-    <h2> Mis preferencias:</h2>
+    <h2 style="font-family:Georgia; font-size: 2em;"> Mis preferencias:</h2>
 <ol>
     <li> Viajar.
     <li> Salir con mis amigos.
@@ -204,6 +231,59 @@ height="300">
 
 <br> <br/> 
 
+<!-- Ejemplos de selectores -->
+<h1>Index.html</h1>
+<div id="myDiv" class="box">
+    <a href="index.html">Índice</a>
+    <a href="visit.html">Visitado</a>
+    <a href="page1.html">Página 1</a>
+    <a href="page2.html">Página 2</a>
+</div>
+
+<br> <br/> 
+
+<!--Barra de Navegación vertical con listas-->
+<ul class="no-style vertical"> 
+    <li><a href="inici.html">Inicio</a></li>
+    <li><a href="productos.html">Productos</a></li>
+    <li><a href="servicios.html">Servicios</a></li>
+    <li><a href="contacto.html">Contactos</a></li>
+</ul>
+
+<br> <br/> 
+
+<!--Barra de Navegación horizontal con listas-->
+<ul class="no-style horizontal">
+    <li><a href="inici.html">Inicio</a></li>
+    <li><a href="productos.html">Productos</a></li>
+    <li><a href="servicios.html">Servicios</a></li>
+    <li><a href="contacto.html">Contactos</a></li>
+</ul>
+
+<br> <br/> 
+<br> <br/> 
+
+<!-- modelos de cajas -->
+
+<h1>Modelo de caja</h1>
+
+<div class="box-sizing-content">
+    <div class="split" >Este div ocupa la mitad izquierda</div>
+    <div class="split" >Este div ocupa la mitad derecha</div>
+    <div class="clear-both" >Este div aparece después</div>
+</div>
+
+<div>Un div de separación</div>
+
+<div class="box-sizing-border">
+    <div class="split" >Este div ocupa la mitad izquierda</div>
+    <div class="split" >Este div ocupa la mitad derecha</div>
+    <div class="clear-both" >Este div aparece después</div>
+</div>
+
+
+
+<br> <br/> 
 
 <!-- Insertar enlace -->
     <a href="https://www.uleam.edu.ec/">ULEAM</a>
